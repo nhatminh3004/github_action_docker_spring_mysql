@@ -9,4 +9,16 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - run: echo Hello World
+      - uses: actions/checkout@v2
+      - name: Set up SSH
+        run: |
+          echo "Host vps" >> ~/.ssh/config
+          echo "    HostName 4.236.141.12" >> ~/.ssh/config
+          echo "    User nhatminh3004" >> ~/.ssh/config
+          echo "    Password Minhdeptrai21" >> ~/.ssh/config
+          echo "    StrictHostKeyChecking no" >> ~/.ssh/config
+          echo "    UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+      - name: Build and deploy
+        run: |
+          docker-compose build
+          docker-compose up -d
