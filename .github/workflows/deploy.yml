@@ -1,9 +1,12 @@
-name: test
+name: Deploy to VPS
+
 on:
   push:
-    branches: [main]
-  jobs:
-    say-hello:
-      runs-on: ubuntu-latest
-      steps:
-        - run: echo Hello world
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo Hello World
