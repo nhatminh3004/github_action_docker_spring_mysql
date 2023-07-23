@@ -25,5 +25,5 @@ jobs:
         script: |
           cd /home/nhatminh3004/github_action_docker_spring_mysql/
           git pull origin main
-          git status
-          echo Hello Word
+          sudo docker-compose up --build
+          echo Build sucess
