@@ -33,7 +33,7 @@ jobs:
             sleep 30
             
             # Check if the application is accessible on port 8080
-            response=$(curl -s -o /dev/null -w "%{http_code}" http://http://20.163.217.108/test)
+            response=$(curl -s -o /dev/null -w "%{http_code}" http://20.163.217.108/test)
             
             # Check if the response code is 200 (OK)
             if [ $response -eq 200 ]; then
