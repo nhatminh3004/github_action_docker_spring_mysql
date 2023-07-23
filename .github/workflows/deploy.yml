@@ -28,3 +28,4 @@ jobs:
           sudo docker-compose down
           sudo docker-compose up --build
           echo Build sucess
+          exit 0

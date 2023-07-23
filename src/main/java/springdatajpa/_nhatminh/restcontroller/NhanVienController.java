@@ -85,7 +85,7 @@ public class NhanVienController {
     }
     @GetMapping("/test")
     public String test () {
-        return  "Hello Nhat Minh";
+        return  "Comple Final CI CD GITHUB Pipeline";
     }
 
 
