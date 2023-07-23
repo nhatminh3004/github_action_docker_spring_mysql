@@ -85,7 +85,7 @@ public class NhanVienController {
     }
     @GetMapping("/test")
     public String test () {
-        return  "bạn Long pro";
+        return  "bạn Long pro 1";
     }
 
 
