@@ -85,7 +85,7 @@ public class NhanVienController {
     }
     @GetMapping("/test")
     public String test () {
-        return  "Success connect";
+        return  "Hello Nhat Minh";
     }
 
 
