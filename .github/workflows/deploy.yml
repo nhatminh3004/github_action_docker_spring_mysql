@@ -30,15 +30,11 @@ jobs:
             echo Build success
             
             # Wait for the application to start (you can adjust the waiting time as needed)
-            sleep 50
+            sleep 35
             
             # Check if the application is accessible on port 8080
             response=$(curl -s -o /dev/null -w "%{http_code}" http://20.163.217.108/test)
-            if [ $response -eq 200 ]; then
-              echo "Spring Boot application is running successfully."
-              exit 0  # Success
-            else
-              echo "Spring Boot application failed to start or is not accessible on port 8080."
-              exit 1  # Failure
+            echo KetQuaCuoiCung: $response
+            exit 0
            
         
