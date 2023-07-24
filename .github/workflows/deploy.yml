@@ -25,8 +25,8 @@ jobs:
           script: |
             cd /home/nhatminh3004/github_action_docker_spring_mysql/
             git pull origin main
-            sudo docker-compose down
-            sudo docker-compose up --build
+             # sudo docker-compose down
+             # sudo docker-compose up --build
             echo Build success
             
             # Wait for the application to start (you can adjust the waiting time as needed)
