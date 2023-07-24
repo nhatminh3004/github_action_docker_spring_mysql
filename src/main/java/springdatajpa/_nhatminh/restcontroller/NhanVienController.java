@@ -85,7 +85,7 @@ public class NhanVienController {
     }
     @GetMapping("/test")
     public String test () {
-        return  "Spring boot aplication restful api";
+        return  "Testing";
     }
 
 
